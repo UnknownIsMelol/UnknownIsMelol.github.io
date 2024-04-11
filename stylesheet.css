@@ -1,0 +1,14 @@
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#game{
+    background-color: #00146e;
+    margin-top: 10rem;
+    border: 2px solid #ff1ee1;
+}
+
