@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Breakout game</title>
+</head>
+
+<body>
+
+    
+
+
+    <script>
+        let canvas = document.getElementById('win'),
+            ctx = canvas.getContext('2d');
+
+        function DrawGG() {
+            ctx.font = 'bold 60px sans-serif';
+            ctx.fillStyle = 'white';
+            ctx.fillText('You Won! GG', 130, 240);
+        }
+
+        //DrawGG();
+
+        //<canvas class="blinkdiv" id="win" width="650" height="450"></canvas>
+
+        alert('click to play again');
+
+        // if playing clicks the button, then redirect to the game.
+        if (window.confirm("click to play again!")) {
+            window.location.href = 'index.html';
+        }
+        
+        
+    </script>
+
+
+
+    <img src="https://t3.ftcdn.net/jpg/03/14/56/66/360_F_314566645_UNHlYyGK2EVdGQ8MoNw95vvH44yknrc7.jpg" width="1980" height="1080">
+</body>
+
+</html>

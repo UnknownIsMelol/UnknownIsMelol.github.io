@@ -1,3 +1,5 @@
+
+
 body{
     height: 100%;
     display: flex;
@@ -12,3 +14,23 @@ body{
     border: 2px solid #ff1ee1;
 }
 
+#win {
+    background-color: black;
+    margin-top: 10rem;
+    border: 2px solid #333;
+}
+
+@-webkit-keyframes blackWhite {  
+    0% { border: 2px solid rgb(255, 0, 204); }
+    50% { border: 2px solid white; }
+    51% { border: 2px solid rgb(255, 0, 204); }
+    100% { border: 2px solid white; }
+  }
+  
+  .blinkdiv {
+
+      background-color: black;
+      -webkit-animation-name: blackWhite;  
+      -webkit-animation-iteration-count: infinite;  
+      -webkit-animation-duration: 2s; 
+  }   

@@ -20,7 +20,7 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 let rowCount = 8,
     columnCount = 9,
     brickWidth = 54,
-    brickHeight = 18,
+    brickHeight = 15,
     brickPadding = 12,
     topOffset = 40,
     leftOffset = 33,
@@ -106,8 +106,8 @@ function hitDetection() {
                     score++;
                     // Check win
                     if (score === rowCount * columnCount) {
-                        alert('You Win!');
-                        document.location.reload();
+                        window.location.href = 'winning.html';
+
                     }
                 }
             }
@@ -138,6 +138,7 @@ function init() {
             dy = -dy;
         } else {
             // If ball don't hit paddle
+
             alert('Game Over!');
             document.location.reload();
         }
